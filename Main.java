@@ -13,7 +13,6 @@ class Expenses {
     this.amount = amount;
 
 }
-
 }
 
 public class Main {
@@ -79,13 +78,13 @@ public class Main {
     System.out.println("===========================");
 
     System.out.print("Date: ");
-    String Date = scanner.nextLine();
+    String date = scanner.nextLine();
     
     System.out.print("Category: ");
-    String Category = scanner.nextLine();
+    String category = scanner.nextLine();
 
     System.out.print("Description: ");
-    String Description = scanner.nextLine();
+    String description = scanner.nextLine();
 
     System.out.print("Amount: ");
     double amount = 0;
@@ -98,13 +97,9 @@ public class Main {
     }
     System.out.println("----------------------------");
 
-    expenseList[count] = new Expenses(Date, Category, Description, amount);
+    expenseList[count] = new Expenses(date, category, description, amount);
     count++;
     System.out.println("Saved successfully.");
-
         return count;
     }
-
 }
-
-
