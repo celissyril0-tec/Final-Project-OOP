@@ -26,7 +26,7 @@ Polymorphism is applied in the program by allowing the Expenses parent type to s
 ---
 
 ## ⚙️ ABSTRACTION
-Abstraction is applied in ExpenseUtils by hiding all the details of calculating totals and filtering expenses, so other parts of the program can simply call its methods. It is also used in the ExpenseViewer interface, which defines the view() method without showing how it works, and in AddExpense, where adding a new expense is grouped into one method, hiding the internal steps from the main program.
+Abstraction is applied on ExpenseViewer interface, which defines the view() method without showing how it works, and in AddExpense, where adding a new expense is grouped into one method, hiding the internal steps from the main program.
 
 ---
 
