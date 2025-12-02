@@ -26,7 +26,7 @@ Polymorphism is applied in the program by allowing the Expenses parent type to s
 ---
 
 ## ⚙️ ABSTRACTION
-Abstraction is applied by using the ExpenseViewer interface, which defines the view() method without revealing how the viewing process works, while ConsoleExpenseViewer provides the actual implementation. It is also shown in the Addexpense class, where the whole process of adding an expense is grouped into one method, hiding the internal steps so the main program only needs to call it.
+Abstraction is applied in ExpenseUtils by hiding all the details of calculating totals and filtering expenses, so other parts of the program can simply call its methods. It is also used in the ExpenseViewer interface, which defines the view() method without showing how it works, and in AddExpense, where adding a new expense is grouped into one method, hiding the internal steps from the main program.
 
 ---
 
@@ -43,6 +43,8 @@ Abstraction is applied by using the ExpenseViewer interface, which defines the v
 **`ExpenseViewer.java`** - Defines the method view() without showing how it works. This applies abstraction by letting the viewer behavior be implemented differently by any class.
 
 **`ConsoleExpenseViewer.java`**- Implements the ExpenseViewer interface. Formats and displays all expenses in a table-like layout. 
+
+**`ExpenseUtils.java`**- A helper class that contains useful methods for working with expenses. It computes the total amount of all expenses and can filter the list based on a specific category. This keeps the code cleaner since these functions are placed in one utility file.
 
 ---
 # 🚀HOW TO RUN THE PROGRAM 
@@ -69,10 +71,12 @@ Abstraction is applied by using the ExpenseViewer interface, which defines the v
 <img width="495" height="144" alt="view-expenses" src="https://github.com/user-attachments/assets/c0ed2144-97fb-4cc3-a367-1fb83d60309d" />
 
 ### 💰 TOTAL EXPENSES
-*(No screenshot provided)*
+<img width="269" height="197" alt="image" src="https://github.com/user-attachments/assets/8b859bac-ad71-4461-a9b8-e5f9f8d8b982" />
+
 
 ### 🔍 FILTER BY CATEGORY
-*(No screenshot provided)*
+  <img width="497" height="158" alt="image" src="https://github.com/user-attachments/assets/734bc259-d215-46d3-a4a6-be0cbf1e52da" />
+
 
 ---
 # 🙏 ACKNOWLEDGEMENT
